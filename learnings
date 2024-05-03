@@ -1,0 +1,112 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\Tushar> ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\Tushar/.ssh/id_rsa):
+PS C:\Users\Tushar> ssh-keygen -t rsa -b 4096 -C "tusharkhardikar107@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\Tushar/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\Tushar/.ssh/id_rsa
+Your public key has been saved in C:\Users\Tushar/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:bs5jAg9OQ5PM+92hG1kSNzcZsWiVLSFlM69hG/aw9nk tusharkhardikar107@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|          ..X=   |
+|           =oB.  |
+|   o .  . = @..  |
+|    *    + = X   |
+|   . o  S . = .  |
+|    *  . +.. . . |
+|   o * .=o .  o E|
+|    . ++=..    . |
+|       o+o       |
++----[SHA256]-----+
+PS C:\Users\Tushar> /.ssh/id_rsa
+/.ssh/id_rsa : The term '/.ssh/id_rsa' is not recognized as the name of a cmdlet,
+function, script file, or operable program. Check the spelling of the name, or if a
+path was included, verify that the path is correct and try again.
+At line:1 char:1
++ /.ssh/id_rsa
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (/.ssh/id_rsa:String) [], CommandNotFound
+   Exception
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command /.ssh/id_rsa was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\/.ssh/id_rsa". See "get-help about_Command_Precedence" for more details.
+PS C:\Users\Tushar> ls ~/.ssh/id_rsa
+
+
+    Directory: C:\Users\Tushar\.ssh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        03-05-2024     22:49           3401 id_rsa
+
+
+PS C:\Users\Tushar> pwdd
+pwdd : The term 'pwdd' is not recognized as the name of a cmdlet, function, script
+file, or operable program. Check the spelling of the name, or if a path was included,
+verify that the path is correct and try again.
+At line:1 char:1
++ pwdd
++ ~~~~
+    + CategoryInfo          : ObjectNotFound: (pwdd:String) [], CommandNotFoundExceptio
+   n
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\Tushar> pwd
+
+Path
+----
+C:\Users\Tushar
+
+
+PS C:\Users\Tushar> cd .ssh
+PS C:\Users\Tushar\.ssh> ls
+
+
+    Directory: C:\Users\Tushar\.ssh
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        03-05-2024     22:49           3401 id_rsa
+-a----        03-05-2024     22:49            755 id_rsa.pub
+-a----        08-04-2024     21:12            843 known_hosts
+-a----        08-04-2024     21:07             97 known_hosts.old
+
+
+PS C:\Users\Tushar\.ssh> cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDjWtgsHMIOXwYeGObnVomIQ00p5GhsdQBY0DmQvZgKueF0KbtV1Jnz1ljfOabiupFdKbyOsePIod6BD3WoqXuZyR91SuZcrkXjGkpGxMBcuRpkhlBmuPELTCO8bUuw9Bb8FdQuAmHfxFbWe5obZqVf80D5q+Cs05qe1cFYOdxFPQdyO1UVcgJYxvAIzBRujhUulk8z51wdUOkhIf22MDvo6FFaiLv7yhglS9fb3DCS8PdDWw9/bpRo7f3L/U7ZH8QLO2EvVTYKiFsuDgftI+nAPFyKo/jlyGEfduuyEsPaGGw69l7/w2lshRHCDE5ZROVaplEscxibVYrLQKeRcQafyYVthooPthRXKyoT5aNfXV/yXhnP/qzfK6IP52qkRajqr9KEzDbguV3SS7zf8yFaEPl0lxRQNBa57FBCeq5EIj0FP/JFYEehQP2vE4FANggYn56z2AjX+p75/Lw5Evk7YM+5U6piAE+tqDrIyLy+V6KIkQbfz7sevKk6aSvGiyPAsU10krSu3bfov4B/kiKaKCTK4+Lx6kGfPRaWB0QhWtnRgnU9aBV83fvqOCp6qdysFHKA50lkRR4t0qdPdOv3nt4V2eQ3+rHcNfswuHqbOxnB343BNWlt9pI+GgtUjgnaPHA+1r2mMfVgCnVfMhb1sNTuYONREb2dwRWRS14Ujw== tusharkhardikar107@gmail.com
+PS C:\Users\Tushar\.ssh>
+PS C:\Users\Tushar\.ssh> git remote add origin git@github.com:Tushar474/Learnings.git
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Tushar\.ssh> git commit -m "first commit"
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\Users\Tushar\.ssh>
+
+
+
+  1 ssh-keygen
+   2 ssh-keygen -t rsa -b 4096 -C "tusharkhardikar107@gmail.com"
+   3 /.ssh/id_rsa
+   4 ls ~/.ssh/id_rsa
+   5 pwdd
+   6 pwd
+   7 cd .ssh
+   8 ls
+   9 cat id_rsa.pub
+  10 git remote add origin git@github.com:Tushar474/Learnings.git
+  11 git commit -m "first commit"
+  12 cd ..//..
+  13 cd Tusharr
+  14 ls
+  15 cd Tushar
