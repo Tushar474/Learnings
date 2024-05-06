@@ -113,3 +113,36 @@ PS C:\Users\Tushar\.ssh>
 
 
   done for the day
+
+
+  230  ps -ef
+  231  ps -ef | grep "amazon"
+  232  ls -ltr
+  233  ps -ef | grep "amazon"
+  234  vim test.sh
+  235  chmod 777 test.sh
+  236  ./test.sh
+  237  ./test.sh | grep 1
+  238  date
+  239  date |echo
+  240  date | echo "date is"
+  241  vim nodeHealth.sh
+  242  ps -ef | grep amazon |awk -F" " '{print $2}'
+  243  vim nodeHealth.sh
+  244  logfile - find errors inn the log
+  245  curl location | grep "ERROR"
+  246  man curl
+  247  curl -X GET api.food.com
+  248  wget api.food.com
+  249  ls
+  250  ls /etc
+  251  find / -name pam.d
+  252  wudo su -
+  253  sudo su -
+  254  sudo find / -name pam.d
+  255  vim ifesle.sh
+  256  ./ifelse.sh
+  257  ./ifesle.sh
+  258  chmod 777 ifesle.sh
+  259  ./ifesle.sh
+  260  history
